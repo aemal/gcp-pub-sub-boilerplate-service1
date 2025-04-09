@@ -14,7 +14,7 @@ await app.register(cors, {
 app.post('/example', async (request, reply) => {
   try {
     const body = request.body as any;
-    console.log('=== Push Notification Received ===');
+    console.log('=== Push Notification Received (/example) ===');
     console.log('Request body:', JSON.stringify(body, null, 2));
     console.log('Request headers:', JSON.stringify(request.headers, null, 2));
     console.log('Request method:', request.method);
